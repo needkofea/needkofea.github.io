@@ -1,4 +1,8 @@
 ---
+import '../assets/reset.css'
+import '../assets/theme.css'
+import '../assets/utils.css'
+
 interface Props {
     title: string;
 
@@ -24,93 +28,6 @@ const { title } = Astro.props;
     </body>
 </html>
 <style is:global>
-    :root {
-        --accent: #fff;
-        --accent-light: 224, 204, 250;
-        --accent-dark: 49, 10, 101;
-        --accent-gradient: linear-gradient(
-            45deg,
-            rgb(var(--accent)),
-            rgb(var(--accent-light)) 30%,
-            white 60%
-        );
-        transition: all 200ms ease;
-        color: white;
-    }
-
-    @media only screen and (max-width: 900px) {
-        :root {
-            font-size: 0.8rem;
-        }
-    }
-    @media only screen and (max-width: 800px) {
-        :root {
-            font-size: 0.7rem;
-        }
-    }
-    @media only screen and (max-width: 600px) {
-        :root {
-            font-size: 0.6rem;
-        }
-    }
 
 
-    * {
-        box-sizing: border-box;
-    }
-
-    body {
-        margin: 0;
-        display: flex;
-        overflow-y: auto;
-        overflow-x: hidden;
-    }
-    html {
-        font-family: system-ui, sans-serif;
-        background: #13151a;
-    }
-    code {
-        font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
-    }
-    /* Expands size to parent */
-    .expand-size {
-        width: 100%;
-        height: 100%;
-    }
-
-    ul:not(.unstyled), ol:not(.unstyled){
-        list-style-type: none;
-        padding: 0;
-        
-    }
-
-    a{
-        text-decoration: none;
-        color: white;
-        font-weight: 800;
-    }
-
-    a:hover{
-        color: rgb(98, 221, 194);
-    }
-    a:hover::after{
-        color: white;
-    }
-
-</style>
-<style>
-    .fw {
-        width: 100vw;
-    }
-    .fh {
-        height: 100vh;
-    }
 </style>
