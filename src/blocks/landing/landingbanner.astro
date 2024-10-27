@@ -1,0 +1,78 @@
+---
+
+const title = `
+ __    __                            __ 
+|  \\  |  \\                          |  \\    █████   ████             ██████                    
+| $$\\ | $$  ______    ______    ____| $$   ░░███   ███░             ███░░███                   
+| $$$\\| $$ /      \\  /      \\  /      $$    ░███  ███     ██████   ░███ ░░░   ██████   ██████  
+| $$$$\\ $$|  $$$$$$\\|  $$$$$$\\|  $$$$$$$    ░███████     ███░░███ ███████    ███░░███ ░░░░░███ 
+| $$\\$$ $$| $$    $$| $$    $$| $$  | $$    ░███░░███   ░███ ░███░░░███░    ░███████   ███████ 
+| $$ \\$$$$| $$$$$$$$| $$$$$$$$| $$__| $$    ░███ ░░███  ░███ ░███  ░███     ░███░░░   ███░░███ 
+| $$  \\$$$ \\$$     \\ \\$$     \\ \\$$    $$    █████ ░░████░░██████   █████    ░░██████ ░░████████
+ \\$$   \\$$  \\$$$$$$$  \\$$$$$$$  \\$$$$$$$   ░░░░░   ░░░░  ░░░░░░   ░░░░░      ░░░░░░   ░░░░░░░░ 
+`;
+---
+
+<div class="landing-banner">
+    <pre class="no-select asciiart">
+                { title }
+            </pre>
+
+    <ul class="socials">
+        <a href="https://bsky.app/profile/kofea.needkofea.xyz">bluesky</a>
+        <a href="https://github.com/needkofea">github</a>
+    </ul>
+
+    <pre> *Construction noises*
+
+                 · ฅ/ᐠ. ̫ .ᐟ\ฅ</pre>
+</div>
+
+<style>
+    @keyframes rainbowAnimation {
+        0%,
+        100% {
+            color: rgba(255, 255, 255, 1);
+        }
+        20% {
+            color: rgba(255, 215, 170, 1);
+        }
+        40% {
+            color: #ffb3d7;
+        }
+        60% {
+            color: rgba(61, 174, 255, 1);
+        }
+        85% {
+            color: rgba(0, 255, 216, 1);
+        }
+    }
+
+    .asciiart {
+        font-weight: 600;
+        animation: rainbowAnimation 10s linear infinite; /* Adjust duration as needed */
+    }
+
+    .landing-banner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .socials {
+        display: flex;
+    }
+
+    .socials > a {
+        font-size: 0.8rem;
+        font-family: monospace;
+    }
+
+    .socials > a:not(:last-child)::after {
+        content: "·";
+        margin: 0.5rem;
+    }
+</style>
