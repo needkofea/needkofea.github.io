@@ -37,36 +37,30 @@ const title = `
 </Layout>
 
 <style>
-    @keyframes scrollBackground {
-        0% {
-            background-position: 0% 0%;
+    @keyframes rainbowAnimation {
+        0%, 100% {
+            color: rgba(255, 255, 255, 1);
         }
-        90% {
-            background-position: 100% 0%;
+        20% {
+            color: rgba(255, 215, 170, 1);
         }
-        100% {
-            background-position: 100% 0%;
+        40% {
+            color:#ffb3d7;
         }
+        60% {
+            color: rgba(61, 174, 255, 1);
+        }
+        85% {
+            color: rgba(0, 255, 216, 1);
+        }
+    
     }
 
     .asciiart {
-        background: linear-gradient(
-            -45deg,
-            rgba(255, 255, 255, 1) 20%,
-            rgba(160, 0, 255, 1) 30%,
-            rgba(0, 212, 255, 1) 38%,
-            rgba(36, 228, 195, 1) 46%,
-            rgba(94, 255, 97, 1) 54%,
-            rgba(247, 255, 0, 1) 62%,
-            rgba(255, 0, 0, 1) 72%,
-            rgba(255, 255, 255, 1) 80%
-        );
-        background-size: 1000% 100%;
+
         font-weight: 600;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        animation: scrollBackground 5s linear infinite; /* Adjust duration as needed */
+        animation: rainbowAnimation 10s linear infinite; /* Adjust duration as needed */
+    
     }
 
     #landing-banner {
