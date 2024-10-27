@@ -25,10 +25,30 @@ const { title } = Astro.props;
         <title>{title}</title>
     </head>
     <body class:list={[Astro.props.fw ? "fw" : "", Astro.props.fh ? "fh" : ""]}>
+        <header id="root-header">
+            <!-- <nav> -->
+                <a href="/">Landing</a>
+            <!-- </nav> -->
+        </header>
         <slot />
     </body>
 </html>
 <style is:global>
+#root-header{
+    font-weight: normal;
+    position: fixed;
+    top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#root-header a{
+    font-size: 1rem;
+    font-weight: normal;
+    animation: rainbowAnimation 10s linear infinite; 
+    animation-delay: 200ms;
+}
 
 </style>

@@ -20,3 +20,22 @@
     flex-direction: column;
     align-items: center;
 }
+
+@keyframes rainbowAnimation {
+    0%,
+    100% {
+        color: rgba(255, 255, 255, 1);
+    }
+    20% {
+        color: rgba(255, 215, 170, 1);
+    }
+    40% {
+        color: #ffb3d7;
+    }
+    60% {
+        color: rgba(61, 174, 255, 1);
+    }
+    85% {
+        color: rgba(0, 255, 216, 1);
+    }
+}
