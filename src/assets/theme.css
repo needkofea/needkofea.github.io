@@ -11,12 +11,13 @@
 }
 
 html {
-    font-family: system-ui, sans-serif;
+    font-family: "Silkscreen", sans-serif;
     background: #13151a;
 }
 
 code {
     font-family:
+        "Silkscreen",
         Menlo,
         Monaco,
         Lucida Console,
@@ -40,4 +41,3 @@ a:hover {
 a:hover::after {
     color: white;
 }
-

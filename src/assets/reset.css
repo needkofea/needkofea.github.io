@@ -34,3 +34,12 @@ body {
     overflow-y: auto;
     overflow-x: hidden;
 }
+
+pre {
+    margin: 0;
+}
+
+br{
+    display: block;
+    margin-top: 1rem;
+}
